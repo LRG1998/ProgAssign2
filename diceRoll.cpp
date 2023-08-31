@@ -3,7 +3,6 @@
 
 int main(){
     Dice dice1{6,2};
-    dice1.Init();
-    std::cout<<dice1.roll()<<"\n" << dice1.roll()<< "\n";
+    dice1.trackRolls(10);
     return 0;
 }
