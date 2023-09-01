@@ -2,7 +2,9 @@
 #include <iostream>
 
 int main(){
-    Dice dice1{6,2};
-    dice1.trackRolls(10);
+    srand(time(0));
+    Dice dice{6,2};
+    dice.trackRolls(100000);
+    dice.output();
     return 0;
 }
